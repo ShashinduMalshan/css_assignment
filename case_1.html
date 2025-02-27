@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="lib/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        body>.main{
+
+            width: 100vw;
+
+            height: 100vh;
+
+            position: relative;
+
+        }
+
+
+        body>.main:first-child{
+            width: 50vw;
+
+            height: 50vh;
+            top: 0;
+            left: 0;
+            background: red;
+            position: absolute;
+
+        }
+        body>.main:nth-child(2) {
+            width: 50vw;
+            top: 0;
+            right: 0;
+            height: 50vh;
+
+            background: green;
+            position: absolute;
+
+        }
+        body>.main:nth-child(3) {
+            width: 50vw;
+            bottom: 0;
+            right: 0;
+            height: 50vh;
+
+            background: blue;
+            position: absolute;
+
+        }
+        body>.main:nth-child(4) {
+            width: 50vw;
+            bottom: 0;
+            left: 0;
+            height: 50vh;
+
+            background: yellowgreen;
+            position: absolute;
+
+        }
+
+        body>.main > div {
+
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: white;
+            border-radius: 50%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        body>.main > div > div {
+
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: red;
+
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) > div {
+
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: white;
+            border-radius: 1px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) > div >div{
+
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background:red;
+            border-radius: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        body >.corner{
+            width: 200px;
+            aspect-ratio: 1/1;
+            background: white;
+            position: absolute;
+
+        }
+
+        body>div:nth-child(6){
+
+            border-radius: 0 360px 0 0;
+
+            bottom: 0;
+
+        }
+        body>div:nth-child(7){
+
+            border-radius:  360px 0 0 0;
+
+            bottom: 0;
+            right: 0;
+
+        }
+        body>div:nth-child(8){
+
+            border-radius: 0 0 0 360px;
+
+            top: 0;
+            right: 0;
+
+
+        }
+        body>div:nth-child(9){
+
+            border-radius: 0 0 360px 0;
+
+            top: 0;
+
+        }
+
+        body>div:nth-child(10){
+
+            background-color: white;
+
+            border-radius: 0 0 100% 100% ;
+            top: -6vw;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        body>div:nth-child(11){
+
+            background-color: white;
+
+            border-radius: 100% 100% 0 0 ;
+            bottom: -6vw;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+
+
+    <div class="corner"></div>
+    <div class="corner"></div>
+    <div class="corner"></div>
+    <div class="corner"></div>
+
+    <div class="corner"></div>
+    <div class="corner"></div>
+
+
+</body>
+</html>
